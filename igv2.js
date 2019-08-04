@@ -26,7 +26,7 @@ async function downloadLurd() {
 	const takon = await readlineSync.question("Masukan Link IG : ");
 	const getLink = await functionGetLink(takon);
 	const download = await functionDownload(getLink, 'pict.png', function(){ 
-    		console.log('done');
+    		console.log('Berhasil Di Download');
 });
     	console.log(`${takon}${getLink}${download}`)
     }	
